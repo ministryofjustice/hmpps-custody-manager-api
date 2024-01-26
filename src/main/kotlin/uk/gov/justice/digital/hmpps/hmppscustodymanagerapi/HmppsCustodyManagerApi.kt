@@ -3,7 +3,7 @@ package uk.gov.justice.digital.hmpps.hmppscustodymanagerapi
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
-@SpringBootApplication()
+@SpringBootApplication
 class HmppsCustodyManagerApi
 
 fun main(args: Array<String>) {
