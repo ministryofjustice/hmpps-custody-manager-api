@@ -92,10 +92,10 @@ workflows:
           requires:
             - request-preprod-approval
           helm_timeout: 5m
-      - request-prod-approval:
-          type: approval
-          requires:
-            - deploy_preprod
+#      - request-prod-approval:
+#          type: approval
+#          requires:
+#            - deploy_preprod
 #      - hmpps/deploy_env:
 #          name: deploy_prod
 #          env: "prod"
