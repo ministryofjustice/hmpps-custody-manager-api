@@ -88,7 +88,7 @@ workflows:
           pipeline_number: <<pipeline.number>>
           context:
             - hmpps-common-vars
-            - hmpps-court-cases-release-dates-api-preprod
+            - hmpps-custody-manager-api-preprod
           requires:
             - request-preprod-approval
           helm_timeout: 5m
