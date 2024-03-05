@@ -5,11 +5,14 @@ generic-service:
   replicaCount: 2
 
   ingress:
-    host: custody-manager-api-dev.hmpps.service.justice.gov.uk
+    host: court-cases-release-dates-api-dev.hmpps.service.justice.gov.uk
 
   env:
     APPLICATIONINSIGHTS_CONFIGURATION_FILE: applicationinsights.dev.json
     HMPPS_AUTH_URL: https://sign-in-dev.hmpps.service.justice.gov.uk/auth
+
+  # Used to access resources like S3 buckets, SQS queues and SNS topics
+  serviceAccountName: hmpps-custody-manager-api
 
 # CloudPlatform AlertManager receiver to route prometheus alerts to slack
 # See https://user-guide.cloud-platform.service.justice.gov.uk/documentation/monitoring-an-app/how-to-create-alarms.html#creating-your-own-custom-alerts
