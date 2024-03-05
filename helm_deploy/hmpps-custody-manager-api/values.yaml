@@ -15,7 +15,7 @@ generic-service:
     tlsSecretName: hmpps-custody-manager-api-cert
 
   # Used to access resources like S3 buckets, SQS queues and SNS topics
-  serviceAccountName: hmpps-custody-manager-api
+  serviceAccountName: hmpps-court-cases-release-dates-api
 
   # Environment variables to load into the deployment
   env:
