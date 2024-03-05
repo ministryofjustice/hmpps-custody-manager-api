@@ -6,6 +6,7 @@ generic-service:
 
   ingress:
     host: court-cases-release-dates-api-dev.hmpps.service.justice.gov.uk
+    tlsSecretName: hmpps-custody-manager-api-cert
 
   env:
     APPLICATIONINSIGHTS_CONFIGURATION_FILE: applicationinsights.dev.json
