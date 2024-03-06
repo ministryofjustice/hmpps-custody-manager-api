@@ -12,7 +12,7 @@ generic-service:
   ingress:
     enabled: true
     host: app-hostname.local # override per environment
-    tlsSecretName: hmpps-custody-manager-api-cert
+    tlsSecretName: hmpps-court-cases-release-dates-api-cert
 
   # Used to access resources like S3 buckets, SQS queues and SNS topics
   serviceAccountName: hmpps-court-cases-release-dates-api
