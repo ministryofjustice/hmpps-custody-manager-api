@@ -3,7 +3,7 @@
 
 generic-service:
   ingress:
-    host: custody-manager-api.hmpps.service.justice.gov.uk
+    host: court-cases-release-dates-api.hmpps.service.justice.gov.uk
 
   env:
     HMPPS_AUTH_URL: https://sign-in.hmpps.service.justice.gov.uk/auth
